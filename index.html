@@ -17,6 +17,40 @@
 <link rel="stylesheet" href="Template/fonts/academicons-1.9.0/css/academicons.min.css"/>
 <!-- </link> -->
 <!-- <meta name="google-site-verification" content="" /> -->
+
+<!-- ChatGpT -->
+	<style>
+    /* Stile base del tooltip */
+    .tooltip {
+      position: relative;
+      display: inline-block;
+    }
+
+    /* Stile del testo del tooltip */
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 120px;
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px;
+      position: absolute;
+      z-index: 1;
+      bottom: 150%;
+      left: 50%;
+      margin-left: -60px;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    /* Mostra il tooltip quando ci si avvicina con il cursore */
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+<!-- Fine ChatGpT-->
 </head>
 
 <body data-spy="scroll" data-target=".navbar-collapse">
@@ -90,7 +124,9 @@
 <!--  FOOTER -->
 <footer>
 <ul class="social-icons">
-<li><a href="https://www.researchgate.net/profile/Federico-Fallucca" class="fab fa-researchgate"></a> </li>
+<div class="tooltip social-icons">
+<li><a href="https://www.researchgate.net/profile/Federico-Fallucca" class="fab fa-researchgate"><span class="tooltiptext">My ResearchGate</span></a> </li>
+</div>
 <li><a href="https://scholar.google.com/citations?user=dgrHsDYAAAAJ&hl=it" class="ai ai-google-scholar"></a></li>
 <li><a href="https://orcid.org/0000-0003-4431-7838" class="ai ai-orcid"></a></li>
 <li><a href="https://arxiv.org/search/math?searchtype=author&query=Fallucca%2C+F&searchtype=author&abstracts=hide&order=-announced_date_first&size=50" class="ai ai-arxiv"></a></li>
