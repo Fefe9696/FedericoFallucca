@@ -22,18 +22,29 @@
 	<!--ChatGpt -->
 
 	<style>
-    /* CSS per rendere adattabile la tabella all'interno del riquadro */
+    /* CSS fornito */
     .container {
-        overflow-x: auto; /* Abilita lo scorrimento orizzontale se la tabella è troppo larga */
+      width: 100%; /* Riquadro si estenderà fino alla larghezza dello schermo */
     }
 
-    /* Imposta la larghezza massima della tabella al 100% del riquadro per dispositivi di dimensioni inferiori a 768px (es. telefoni) */
-    @media (max-width: 767px) {
-        .container table {
-            max-width: 100%;
-        }
+    .contact {
+      max-width: 100%; /* Imposta la larghezza massima del riquadro */
+      overflow-x: auto; /* Consente lo scrolling orizzontale se la tabella è più ampia dello schermo */
     }
-</style>
+
+    table {
+      width: 100%; /* Tabella si estenderà fino alla larghezza del riquadro */
+      /* Altri stili della tabella */
+    }
+
+    /* Media query per dispositivi più piccoli */
+    @media (max-width: 600px) {
+      table td {
+        width: auto; /* Imposta la larghezza delle colonne della tabella su "auto" */
+        display: block; /* Imposta il display dei TD su "block" per il layout verticale */
+      }
+    }
+  </style>
 	
 	<!--Fine CharGpT-->
 </head>
