@@ -19,6 +19,37 @@
 <!-- <meta name="google-site-verification" content="" /> -->
 
 <!-- ChatGpT -->
+	<style>
+    /* Stile per i link */
+    a {
+      color: #007bff; /* Colore del testo */
+      font-size: 18px; /* Dimensione del carattere */
+      text-decoration: none; /* Rimuovi la sottolineatura */
+    }
+
+    /* Stile per il tooltip */
+    a[title]::before {
+      content: attr(title); /* Mostra il contenuto dell'attributo "title" come tooltip */
+      background-color: #000; /* Colore di sfondo */
+      color: #fff; /* Colore del testo */
+      font-size: 14px; /* Dimensione del carattere */
+      padding: 5px 10px; /* Spaziatura interna */
+      border-radius: 6px; /* Bordo arrotondato */
+      position: absolute; /* Posizionamento assoluto per il tooltip */
+      left: 50%; /* Centra orizzontalmente */
+      bottom: 100%; /* Posiziona sopra il link */
+      transform: translateX(-50%); /* Centra orizzontalmente con il link */
+      opacity: 0; /* Rendi il tooltip invisibile inizialmente */
+      visibility: hidden; /* Nascondi il tooltip inizialmente */
+      transition: opacity 0.2s, visibility 0.2s; /* Effetto di transizione */
+    }
+
+    /* Mostra il tooltip quando il cursore si avvicina al link */
+    a:hover[title]::before {
+      opacity: 1;
+      visibility: visible;
+    }
+  </style>
 <!-- Fine ChatGpT-->
 </head>
 
