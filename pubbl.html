@@ -37,13 +37,16 @@
       /* Altri stili della tabella */
     }
 
-    /* Media query per dispositivi più piccoli */
-    @media (max-width: 600px) {
-      table td {
-        width: auto; /* Imposta la larghezza delle colonne della tabella su "auto" */
-        display: block; /* Imposta il display dei TD su "block" per il layout verticale */
-      }
-    }
+   @media (max-width: 600px) {
+  table {
+    table-layout: auto; /* Imposta la tabella per calcolare automaticamente la larghezza delle colonne */
+    overflow-x: auto; /* Consente lo scrolling orizzontale per la tabella */
+  }
+
+  table td {
+    width: auto; /* Imposta la larghezza delle colonne della tabella su "auto" */
+    display: table-cell; /* Ripristina il display dei TD su "table-cell" per mantenere la struttura della tabella */
+  }
   </style>
 	
 	<!--Fine CharGpT-->
