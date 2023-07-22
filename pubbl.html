@@ -20,6 +20,21 @@
 </link>
 
 	<!--ChatGpt -->
+
+	<style>
+    /* CSS per rendere adattabile la tabella all'interno del riquadro */
+    .riquadro-tabella {
+        overflow-x: auto; /* Abilita lo scorrimento orizzontale se la tabella è troppo larga */
+    }
+
+    /* Imposta la larghezza massima della tabella al 100% del riquadro per dispositivi di dimensioni inferiori a 768px (es. telefoni) */
+    @media (max-width: 767px) {
+        .riquadro-tabella table {
+            max-width: 100%;
+        }
+    }
+</style>
+	
 	<!--Fine CharGpT-->
 </head>
 
@@ -49,10 +64,9 @@
 	
 <!-- SECTIONS -->	
 <section class="container">
-<div class="contact">
+<div class="riquadro-tabella">
 
 <!--ChatGpT-->
-<table>
          <table>
         <tr >
           <td style="width: 170px; vertical-align: top;"><i>Author(s)</i></td>
