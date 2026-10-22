@@ -20,7 +20,7 @@
 </link>
 
 	<!--ChatGpt -->
-
+	
 <style>
     /* CSS fornito */
     .container {
@@ -35,32 +35,15 @@
     table {
       width: 100%; /* Tabella si estenderà fino alla larghezza del riquadro */
       
-      /* --- MODIFICATO PER LE CURVE --- */
-      border-separate: separate; /* Permette lo stondamento dei bordi */
-      border-spacing: 0 10px;    /* Crea uno spazio vuoto di 10px tra una riga e l'altra */
+      /* Forza i bordi a unirsi senza interruzioni */
+      border-collapse: collapse; 
     }
 
     table th, table td {
-      padding: 12px 16px; /* Spazio interno per dare respiro al testo */
+      padding: 12px 8px; /* Spazio per non far stare il testo attaccato */
       
-      /* --- MODIFICATO PER EFFETTO RIGA --- */
-      background-color: #ffffff; /* Serve uno sfondo per vedere l'effetto stondato (puoi cambiarlo) */
-      border-top: 2px solid orange;    /* Riga arancione sopra */
-      border-bottom: 2px solid orange; /* Riga arancione sotto */
-    }
-
-    /* Stonda l'angolo sinistro della prima cella di ogni riga */
-    table tr td:first-child, table tr th:first-child {
-      border-left: 2px solid orange;
-      border-top-left-radius: 8px;
-      border-bottom-left-radius: 8px;
-    }
-
-    /* Stonda l'angolo destro dell'ultima cella di ogni riga */
-    table tr td:last-child, table tr th:last-child {
-      border-right: 2px solid orange;
-      border-top-right-radius: 8px;
-      border-bottom-right-radius: 8px;
+      /* RIGA MODIFICATA: Spessore ridotto a 1px e colore arancione molto chiaro/pastello */
+      border-bottom: 1px solid #ffd1a4; 
     }
 </style>
 
