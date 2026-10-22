@@ -35,7 +35,17 @@
     table {
       width: 100%; /* Tabella si estenderà fino alla larghezza del riquadro */
       /* Altri stili della tabella */
+      
+      /* --- INTEGRATO DA QUI --- */
+      border-collapse: collapse; /* Unisce i bordi per creare linee continue */
     }
+
+    /* --- NUOVO BLOCCO INTEGRATO --- */
+    table th, table td {
+      padding: 12px 8px; /* Allontana il testo dai bordi per non farlo stare attaccato */
+      border-bottom: 2px solid orange; /* Crea la riga di suddivisione arancione */
+    }
+</style>
 
    @media (max-width: 600px) {
   table {
